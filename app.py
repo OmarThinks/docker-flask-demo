@@ -7,4 +7,4 @@ def home():
 	return jsonify({"success":True,"details":"The app is running"}),200
 
 if __name__ == '__main__':
-	app.run()
+	app.run(debug=True)
