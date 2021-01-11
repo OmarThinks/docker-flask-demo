@@ -13,6 +13,14 @@ from sqlalchemy import Column, String, Integer, Float, Boolean
 
 from models import (AnyData,db)
 
+for env_var in os.environ:
+    print(env_var,flush=True)
+    try:
+        print(str(os.environ[env_var]),flush=True)
+    except:
+        pass
+    print("_________")
+
 
 
 
