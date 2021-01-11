@@ -4,3 +4,8 @@ services:
     build: .
     ports:
       - "5000:5000"
+    volumes:
+      - "the_data_base:/db"
+volumes:
+  the_data_base:
+    external: true
