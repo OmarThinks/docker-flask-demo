@@ -109,15 +109,32 @@ It will take a while, let it take it's time.
 
 
 
+### 5) Validate that every thing is running correctly:
 
 
+1. **Open** your favourite **browser**  
+(Like Google chrome, or Firefox)
+
+2. **Open three** different **tabs**
+
+3. In the tabs, in the address bar, type these
+
+<b>
+
+```address
+http://127.0.0.1:5000/
+```
+```address
+http://127.0.0.1:5001/
+```
+```address
+http://127.0.0.1:5002/
+```
+
+</b>
 
 
-
-
-
-
-
+4. Make sure taht you do not see any error
 
 
 
