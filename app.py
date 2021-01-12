@@ -33,9 +33,9 @@ class config_test:
     #SQLALCHEMY_DATABASE_URI = "sqlite:///{}".format(
     #    os.path.join(os.path.dirname(os.path.abspath(__file__)), "db/test.sqlite"))
     SQLALCHEMY_TRACK_MODIFICATIONS= False
-    #SQLALCHEMY_DATABASE_URI="sqlite:////db\\test.sqlite"
-    SQLALCHEMY_DATABASE_URI = "sqlite:///{}".format(
-        os.path.join(os.path.dirname(os.path.abspath(__file__)), "db\\test.sqlite"))
+    SQLALCHEMY_DATABASE_URI="sqlite:////db/test.sqlite"
+    #SQLALCHEMY_DATABASE_URI = "sqlite:///{}".format(
+    #    os.path.join(os.path.dirname(os.path.abspath(__file__)), "db\\test.sqlite"))
     print(SQLALCHEMY_DATABASE_URI)
 
 
