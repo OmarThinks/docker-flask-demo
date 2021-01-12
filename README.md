@@ -138,8 +138,17 @@ http://127.0.0.1:5002/
 
 
 
+5. Run this command:
 
-
+	<b>
+	
+	```bash
+	docker ps
+	```
+	
+	</b>
+	Now you will see a list of the running containers.<br>
+	There are 3 containers
 
 
 
@@ -148,10 +157,9 @@ http://127.0.0.1:5002/
 
 ### 6) Connected to same volume:
 
-
-Keep refreshing each tab, to make sure that are connected 
+Now, Keep refreshing each tab, to make sure that are connected 
 to the same db.  
-This db is inside the volume that we have craeted earlier.
+This db is inside the volume that we have created earlier.
 
 
 
@@ -166,6 +174,42 @@ This db is inside the volume that we have craeted earlier.
 
 
 
+
+## Return to the previous case:
+
+Now after you have executed these commands, you want to return to the
+original setup.
+
+
+
+### 1) Delete the containers
+
+
+
+<b>
+
+```bash
+docker ps -a
+```
+
+</b>
+Now you will see a list of the running containers.<br>
+Copy the id of each one of them, and use it in the following command:
+<b>
+
+```bash
+docker rm -f <conatiner1 id> <conatiner2 id> <conatiner2 id>
+```
+
+</b>
+Now validate that the conatainers have been deleted, using this command:
+<b>
+
+```bash
+docker ps -a
+```
+
+</b>
 
 
 
