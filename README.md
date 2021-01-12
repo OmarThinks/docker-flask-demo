@@ -70,6 +70,31 @@ A volume called "**the_data_base**" should appear now.
 
 
 
+### 3) cd into project directory:
+
+1. Download the the project form github.
+2. Open your CLI (Command Line Interface)
+3. cd (Change Directory) into the project directory  
+	So that you can execute commands here  
+	for more info about how to change directory, 
+	watch this video on Youtube:<br><a 
+	href="https://www.youtube.com/watch?v=oQc-2gsjgDg">
+	Youtube: Git Bash, Bash Basics</a>
+4. validate that you are in the correct directory using the command  
+	<b>
+	
+	```bash
+	ls
+	```
+	
+	</b>
+	
+	and now should see a list of file and direcories in this folder  
+	It should include **app.py**
+
+
+
+
 
 
 
