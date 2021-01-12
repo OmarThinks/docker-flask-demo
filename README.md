@@ -227,7 +227,7 @@ docker images
 ```
 
 </b>
-Now you will see a list of the iamges.<br>
+Now you will see a list of the images.<br>
 <b>Note: the image id is repeated.</b><br>
 Copy the id of each one of them, and use it in the following command:
 
@@ -248,6 +248,38 @@ docker images
 </b>
 
 
+
+### 3) Delete the volume
+
+Run this command to show the volumes
+
+<b>
+
+```bash
+docker volume ls
+```
+
+</b>
+Now you will see a list of the volumes.<br>
+<b>Note: there is a volume called "the_data_base".</b><br>
+Now delete this volume using this command:
+<b>
+
+```bash
+docker volume rm the_data_base
+```
+
+</b>
+Now validate that the volume have been deleted, using this command:
+<b>
+
+```bash
+docker volumes
+```
+
+</b>
+
+Now the volume is not among the volumes.
 
 
 
