@@ -128,7 +128,7 @@ http://127.0.0.1:5002/
 </b>
 
 
-4. Make sure taht you do not see any error
+4. Make sure that you do not see any error
 
 
 
@@ -169,7 +169,7 @@ This db is inside the volume that we have created earlier.
 
 
 
-## Return to the previous case:
+## Return to the original docker setup:
 
 Now after you have executed these commands, you want to return to the
 original setup.
@@ -223,7 +223,7 @@ docker images
 </b>
 Now you will see a list of the images.<br>
 <b>Note: the image id is repeated.</b><br>
-Copy the id of each one of them, and use it in the following command:
+Copy the id of one of them, and use it in the following command:
 
 <b>
 
