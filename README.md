@@ -268,7 +268,7 @@ Now validate that the volume have been deleted, using this command:
 <b>
 
 ```bash
-docker volumes
+docker volume ls
 ```
 
 </b>
