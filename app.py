@@ -56,17 +56,34 @@ except Exception as e:
 
 
 
+try:
+    if len(AnyData.query.all())==0:
+        data= AnyData()
+        data.insert()
+except:
+    pass
+
 @app.route('/')
 def hello():
+    try:
+        data= AnyData.query.order_by(AnyData.id).first()
+        data.number = data.number+1
+        data.update()
+        data_from_db = data.number
+    except e:
+        print(str(e),flush=True)
+
     to_return ="A variable from the database: "
     try:
-        to_return += str(len(AnyData.query.all()))
-    except:
+        to_return += str(data_from_db)
+    except e:
         to_return += "Error: Can't read the database variable"
+        print(str(e),flush=True)
+
     to_return += "<br>"
     to_return += "An environmental variable called SECRET: "
     try:
-        to_return += os.environ["SECRET"]
+        to_return += str(os.environ["SECRET"])
     except:
         to_return += "Error: Can't read the environmental variable"
     return to_return

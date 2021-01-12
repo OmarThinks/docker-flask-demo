@@ -14,7 +14,7 @@ class AnyData(db.Model):
     number = Column(Integer(), primary_key=False)
 
     def __init__(self):
-        self.number = 1
+        self.number = 0
 
     def insert(self):
         db.session.add(self)
