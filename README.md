@@ -184,7 +184,7 @@ original setup.
 
 ### 1) Delete the containers
 
-
+Run this command to show the conatiners
 
 <b>
 
@@ -207,6 +207,42 @@ Now validate that the conatainers have been deleted, using this command:
 
 ```bash
 docker ps -a
+```
+
+</b>
+
+
+
+
+
+
+### 2) Delete the images
+
+Run this command to show the images
+
+<b>
+
+```bash
+docker images
+```
+
+</b>
+Now you will see a list of the iamges.<br>
+<b>Note: the image id is repeated.</b><br>
+Copy the id of each one of them, and use it in the following command:
+
+<b>
+
+```bash
+docker rmi -f <image1 id>
+```
+
+</b>
+Now validate that the images have been deleted, using this command:
+<b>
+
+```bash
+docker images
 ```
 
 </b>
