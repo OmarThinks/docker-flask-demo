@@ -58,7 +58,18 @@ except Exception as e:
 
 @app.route('/')
 def hello():
-    return str(len(AnyData.query.all()))
+    to_return ="A variable from the database: "
+    try:
+        to_return += str(len(AnyData.query.all()))
+    except:
+        to_return += "Error: Can't read the database variable"
+    to_return += "<br>"
+    to_return += "An environmental variable called SECRET: "
+    try:
+        to_return += os.environ["SECRET"]
+    except:
+        to_return += "Error: Can't read the environmental variable"
+    return to_return
 
 if __name__ == '__main__':
-    app.run(host="0.0.0.0",debug=False)
+    app.run(host="127.0.0.1",debug=False,port=5000)
