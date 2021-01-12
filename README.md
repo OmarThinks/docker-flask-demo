@@ -146,6 +146,21 @@ http://127.0.0.1:5002/
 
 
 
+### 6) Connected to same volume:
+
+
+Keep refreshing each tab, to make sure that are connected 
+to the same db.  
+This db is inside the volume that we have craeted earlier.
+
+
+
+
+
+
+
+
+
 
 
 
