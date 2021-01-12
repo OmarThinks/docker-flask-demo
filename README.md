@@ -88,9 +88,48 @@ A volume called "**the_data_base**" should appear now.
 	```
 	
 	</b>
-	
+
 	and now should see a list of file and direcories in this folder  
 	It should include **app.py**
+
+
+
+
+### 4) Run it:
+Inside the CLI (Command line interface), run this command:
+<b>
+
+```bash
+docker-compose up --force-recreate --build -d
+```
+
+</b>
+It will take a while, let it take it's time.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
