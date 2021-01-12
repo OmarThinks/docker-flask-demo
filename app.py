@@ -13,20 +13,9 @@ from sqlalchemy import Column, String, Integer, Float, Boolean
 
 from models import (AnyData,db)
 
-"""for env_var in os.environ:
-    print(env_var,flush=True)
-    try:
-        print(str(os.environ[env_var]),flush=True)
-    except:
-        pass
-    print("_________")
-"""
-
-
 
 
 class config_test:
-    #SECRET_KEY=os.urandom(32)
     SECRET_KEY=secrets.token_urlsafe(5000)
     basedir = os.path.abspath(os.path.dirname(__file__))
     DEBUG = False
@@ -44,7 +33,6 @@ class config_test:
 
 app = Flask(__name__)
 app.config.from_object(config_test)
-#print(app.config['SECRET_KEY'],flush=True)
 db.app = app
 db.init_app(app)
 
