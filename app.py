@@ -58,13 +58,13 @@ def hello():
         data.number = data.number+1
         data.update()
         data_from_db = data.number
-    except e:
+    except Exception as e:
         print(str(e),flush=True)
 
     to_return ="A variable from the database: "
     try:
         to_return += str(data_from_db)
-    except e:
+    except Exception as e:
         to_return += "Error: Can't read the database variable"
         print(str(e),flush=True)
 
