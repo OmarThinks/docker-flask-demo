@@ -18,7 +18,7 @@ This is an MIT licensed Flask Application running on docker
 ## Up And Running:
 
 ### 1) Validations:
-1. Inside the CLI (Git bash for example run these commands)
+Inside the CLI (Git bash for example run these commands)
 
 <b>
 
@@ -39,6 +39,31 @@ and you need to install them correctly.
 
 
 
+
+
+
+### 2) Create a volume called "the_data_base":
+
+
+Inside the CLI (Git bash for example run these commands)
+
+<b>
+
+```bash
+docker volume create the_data_base
+```
+</b>
+
+Then validate that the **the_data_base** volume has been created, using
+this command
+<b>
+
+```bash
+docker volume ls
+```
+</b>
+
+A volume called "**the_data_base**" should appear now.
 
 
 
